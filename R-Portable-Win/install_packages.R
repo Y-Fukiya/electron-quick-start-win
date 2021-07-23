@@ -23,10 +23,31 @@ if (!requireNamespace("BiocManager", quietly = TRUE)){
 if (!requireNamespace("magrittr", quietly = TRUE)){
   utils::install.packages("magrittr", repos='http://cran.us.r-project.org')
 }
+
+if(!requireNamespace("shiny", quietly=TRUE)){
+  install.packages('shiny', repos='http://cran.us.r-project.org')
+}
+
+if(!requireNamespace("shinythemes", quietly=TRUE)){
+  install.packages('shinythemes', repos='http://cran.us.r-project.org')
+}
+
+if (!requireNamespace("shinyWidgets", quietly = TRUE)){
+  utils::install.packages("shinyWidgets", repos='http://cran.us.r-project.org')
+}
+
+if (!requireNamespace("tidyverse", quietly = TRUE)){
+  utils::install.packages("tidyverse", repos='http://cran.us.r-project.org')
+}
+
 library(batch)
 library(purrr)
 library(stringr)
 library(magrittr)
+library(shiny)
+library(shinythemes)
+library(shinyWidgets)
+library(tidyverse)
 
 parseCommandArgs(evaluate=TRUE)
 
